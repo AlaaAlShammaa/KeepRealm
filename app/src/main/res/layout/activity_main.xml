@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.alaaalshammaa.keeprealm.MainActivity">
+
+    <co.moonmonkeylabs.realmrecyclerview.RealmRecyclerView
+        android:id="@+id/realm_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rrvIsRefreshable="false"
+        app:rrvLayoutType="Grid"
+        app:rrvGridLayoutSpanCount="2"
+        app:rrvEmptyLayoutId="@layout/empty_layout"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="right|bottom"
+        >
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/fab_margin"
+            android:tint="@android:color/white"
+            android:src="@drawable/ic_edit_black_24dp"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabDel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="@dimen/fab_margin"
+            android:tint="@android:color/white"
+            android:src="@drawable/ic_delete_black_24dp"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
